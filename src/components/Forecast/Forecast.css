@@ -1,0 +1,37 @@
+.textInput {
+    font-size: large;
+    border: 1px solid #EEEEEE;
+    padding: 5px;
+    border-radius: 3px;
+    display: block;
+    margin: 5px auto;
+}
+
+.textInput:focus {
+    outline: none;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px rgb(50, 100, 153);
+}
+
+.Radio {
+    font-size: small;
+}
+.Radio:after {
+    background-color: #f12711;
+}
+
+.Button {
+    display: block;
+    margin: 10px auto;
+    padding: .5rem;
+    font-size: 1rem;
+    background: linear-gradient(to bottom, #f12711, #f5af19);
+    border: none;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+}
+
+.Button:hover {
+    background: linear-gradient(to top, #f12711, #f5af19);
+}
