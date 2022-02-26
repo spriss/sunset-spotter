@@ -1,35 +1,70 @@
+.header {
+    font-size: 1rem;
+    border: 1px solid #EEEEEE;
+    border-radius: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
+    height: 6vh;
+    
+    
+}
+
+.enterCity {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.enterCity2 {
+    margin-top: 4px;
+}
+
 .textInput {
-    font-size: large;
+    font-size: 1rem;
     border: 1px solid #EEEEEE;
     padding: 5px;
     border-radius: 3px;
-    display: block;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
     margin: 5px auto;
+    height: 25px;
+    margin-left: 20px;
 }
 
 .textInput:focus {
     outline: none;
-    border-color: #719ECE;
-    box-shadow: 0 0 10px rgb(50, 100, 153);
+    border-color: #ce8b71;
+    box-shadow: 0 0 10px #f12711;
 }
 
 .Radio {
     font-size: small;
+    margin-top: 1vh;
+    margin-left: 10px;
 }
 .Radio:after {
     background-color: #f12711;
 }
 
 .Button {
-    display: block;
-    margin: 10px auto;
-    padding: .5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     font-size: 1rem;
     background: linear-gradient(to bottom, #f12711, #f5af19);
     border: none;
     border-radius: 7px;
     color: white;
     cursor: pointer;
+    height: 25px;
+    width: auto;
+    margin-left: 20px;
+    margin-top: 6px;
 }
 
 .Button:hover {

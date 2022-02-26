@@ -55,44 +55,46 @@ function getForecast(e) {
 
     return (
         <div>
-            <h2>Find Current Weather Conditions</h2>
-            <form onSubmit={getForecast}>
-                <input
-                    type="text"
-                    placeholder="Enter City"
-                    maxLength="50"
-                    className="textInput"
-                    value={city}
-                    onChange={(e) => setCity(e.target.value)}
-                    />
-                <label className="Radio">
+            <header className='header'>
+                <form className= "enterCity" onSubmit={getForecast}>
+                    <div className='enterCity2'>Where do you want to go?</div>
                     <input
-                        type="radio"
-                        name="units"
-                        checked={unit === "imperial"}
-                        value="imperial"
-                        onChange={(e) => setUnit(e.target.value)}
+                        type="text"
+                        placeholder="Enter City"
+                        maxLength="50"
+                        className="textInput"
+                        value={city}
+                        onChange={(e) => setCity(e.target.value)}
                         />
-                    Fahrenheit
-                </label>
-                <label className="Radio">
-                    <input
-                        type="radio"
-                        name="units"
-                        checked={unit === "metric"}
-                        value="metric"
-                        onChange={(e) => setUnit(e.target.value)}
-                        />
-                    Celcius
-                </label>
-
-                <button className="Button" type="submit">Get Forecast</button>
-            </form>
-            <Conditions
-               responseObj={responseObj}
-               error={error}
-               loading={loading}
-               />
+                    <label className="Radio">
+                        <input
+                            type="radio"
+                            name="units"
+                            checked={unit === "imperial"}
+                            value="imperial"
+                            onChange={(e) => setUnit(e.target.value)}
+                            />
+                        Fahrenheit
+                    </label>
+                    <label className="Radio">
+                        <input
+                            type="radio"
+                            name="units"
+                            checked={unit === "metric"}
+                            value="metric"
+                            onChange={(e) => setUnit(e.target.value)}
+                            />
+                        Celcius
+                    </label>
+                    <button className="Button" type="submit">Get Forecast</button>
+                    
+                </form>
+                <Conditions
+                responseObj={responseObj}
+                error={error}
+                loading={loading}
+                />
+            </header>
         </div>
     )
 }
