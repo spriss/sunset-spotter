@@ -1,5 +1,6 @@
 import './App.css';
 import Forecast from "./components/Forecast/Forecast";
+import Destinations from './components/Destinations/Destinations';
 
 
 function App() {
@@ -11,40 +12,7 @@ function App() {
         <main>
           <Forecast />
         </main>
-
-        <body className='destinations'>
-          <div className= "card">
-            <div className='card-img'>
-              <img src="https://www.w3schools.com/howto/img_avatar.png"></img>
-            </div>
-            <div class="card-body">
-              <h4><b>John Doe</b></h4>
-              <p>Architect & Engineer</p>
-              <button className="Button" type="submit">Get Forecast</button>
-            </div>
-          </div>
-
-          <div className= "card">
-            <div className='card-img'>
-              <img src="https://www.w3schools.com/howto/img_avatar.png"></img>
-            </div>
-            <div class="card-body">
-              <h4><b>John Doe</b></h4>
-              <p>Architect & Engineer</p>
-            </div>
-          </div>
-
-          <div className= "card">
-            <div className='card-img'>
-              <img src="https://www.w3schools.com/howto/img_avatar.png"></img>
-            </div>
-            <div class="card-body">
-              <h4><b>John Doe</b></h4>
-              <p>Architect & Engineer</p>
-            </div>
-          </div>
-
-        </body>
+          <Destinations />
         <footer>
           Made by Sebastian Priss
         </footer>
