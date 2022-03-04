@@ -51,6 +51,7 @@ function getForecast(e) {
         setLoading(false);
         console.log(err.message);
     });
+    console.log(city);
 }
 
     return (
