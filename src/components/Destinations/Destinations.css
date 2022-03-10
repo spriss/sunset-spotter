@@ -5,6 +5,10 @@
     flex-direction: row;
     justify-content: center;
     padding: 5px;
+    transition-delay: 1.25s;
+    transition-property: opacity;
+    transition-timing-function: ease-in;
+    transition-duration: .5s;
   }
   
   .card {
@@ -19,11 +23,11 @@
   
   /* On mouse-over, add a deeper shadow */
   .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(255, 0, 0, 0.2);
+    /*box-shadow: 0 8px 16px 0 rgba(255, 0, 0, 0.2);*/
     transform: scale(1.05);
   }
   
-  img {
+  .image {
     border-radius: 5px 5px 0px 0px;
     display: block;
     height: 20rem;
@@ -44,7 +48,7 @@
     justify-content: center;
     align-items: center;
     font-size: 1.1rem;
-    background: linear-gradient(to bottom, #f12711, #f5af19);
+    background: #df8e14de;
     border: none;
     border-radius: 0 0 5px 5px;
     color: white;
@@ -66,3 +70,21 @@
       margin-top: 1rem;
       margin-bottom: 1rem;
   }
+
+  #imageOne {
+      background-image: url("https://lh5.googleusercontent.com/p/AF1QipNp0e6GKgtd9-Gi92nNFjOZd__P6omSh07tCQzw=w426-h240-k-no");
+      background-size: cover;
+  }
+
+  #imageTwo {
+    background-image: url("https://lh5.googleusercontent.com/p/AF1QipOCIooIPbzGyZkiNu4nKjxoIdjZo08pWYFZgAFS=w408-h272-k-no");
+    background-size: cover;
+}
+
+  #imageThree {
+    background-image: url("https://lh5.googleusercontent.com/p/AF1QipPaUdOgWq-6EYX5FtidS3QmZqECQRFQWmKyBmXn=w408-h544-k-no");
+    background-size: cover;
+    background-position: center;
+}
+
+  

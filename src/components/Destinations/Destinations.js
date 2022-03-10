@@ -3,14 +3,15 @@ import city from '../Forecast/Forecast'
 import './Destinations.css';
 
 
-const Destinations = () => {
-
+const Destinations = (props) => {
+    const cardView = props.cardView;
+    
     return(
     
-        <div className='destinations'>
+        <div className='destinations' style={{opacity: cardView}}>
             <div className= "card">
             <div className='card-img'>
-                <img src="https://lh5.googleusercontent.com/p/AF1QipNp0e6GKgtd9-Gi92nNFjOZd__P6omSh07tCQzw=w426-h240-k-no"></img>
+                <div className='image' id='imageOne'></div>
             </div>
             <div className="card-body">
                 <div className='Title'>North Passage Point Park</div>
@@ -21,7 +22,7 @@ const Destinations = () => {
         
             <div className= "card">
             <div className='card-img'>
-                <img src="https://lh5.googleusercontent.com/p/AF1QipOCIooIPbzGyZkiNu4nKjxoIdjZo08pWYFZgAFS=w408-h272-k-no"></img>
+                <div className='image' id='imageTwo'></div>
             </div>
             <div className="card-body">
                 <div className='Title'>Ravenna Park</div>
@@ -32,7 +33,7 @@ const Destinations = () => {
         
             <div className= "card">
             <div className='card-img'>
-                <img src="https://lh5.googleusercontent.com/p/AF1QipPaUdOgWq-6EYX5FtidS3QmZqECQRFQWmKyBmXn=w408-h544-k-no"></img>
+                <div className='image' id='imageThree'></div>
             </div>
             <div className="card-body">
                 <div className='Title'>West Montlake Park</div>

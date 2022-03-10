@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import Conditions from '../Conditions/Conditions';
+import Destinations from '../Destinations/Destinations';
+import "../Destinations/Destinations.css";
 import {
     textInput,
     Radio,
     Button
 } from './Forecast.css';
 
-const Forecast = () => {
-
-
+const Forecast = (props) => {
 
     let [city, setCity] = useState('');
     let [unit, setUnit] = useState('imperial');
@@ -89,8 +89,7 @@ function getForecast(e) {
                             />
                         Celcius
                     </label>
-                    <button className="Button" type="submit">Get Forecast</button>
-                    
+                    <button className="Button" type="submit" onClick={props.cardView}>Get Forecast</button>
                     
                 </form>
                 <Conditions
