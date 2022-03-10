@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-//import { Button } from "antd";
 import Conditions from '../Conditions/Conditions';
 import {
     textInput,
@@ -8,6 +7,8 @@ import {
 } from './Forecast.css';
 
 const Forecast = () => {
+
+
 
     let [city, setCity] = useState('');
     let [unit, setUnit] = useState('imperial');
@@ -54,6 +55,7 @@ function getForecast(e) {
     console.log(city);
 }
 
+
     return (
         <div>
             <header className='header'>
@@ -88,6 +90,7 @@ function getForecast(e) {
                         Celcius
                     </label>
                     <button className="Button" type="submit">Get Forecast</button>
+                    
                     
                 </form>
                 <Conditions

@@ -1,81 +1,46 @@
 import React, { useState } from 'react';
 import city from '../Forecast/Forecast'
+import './Destinations.css';
+
 
 const Destinations = () => {
-    /*
-    let [city, setCity] = useState('');
-    let [unit, setUnit] = useState('imperial');
-    let [responseObj, setResponseObj] = useState({});
-    let [error, setError] = useState(false);
-    let [loading, setLoading] = useState(false);
-    */
-
-
-
-        fetch("https://google-maps-search1.p.rapidapi.com/search", {
-            "method": "POST",
-            "headers": {
-                "content-type": "application/json",
-                "x-rapidapi-host": "google-maps-search1.p.rapidapi.com",
-                "x-rapidapi-key": "2bc802fca1msh837fec9530457e8p122ea3jsn960d91b484d4"
-            },
-            "body": JSON.stringify({
-                "limit": 3,
-                "language": "en",
-                "region": "us",
-                "queries": [
-                    "Lawyers near San Francisco, CA, US",
-                    "Lawyers near New York, NY, US",
-                    "Graphic Designers in Chicago"
-                ],
-                "coordinates": "37.381315,-122.046148"
-            })
-        })
-        .then(response => {
-            console.log(response.json);
-        })
-        .catch(err => {
-            console.error(err);
-        });
-
-
-
 
     return(
-        
-        <body className='destinations'>
-            <div className= "card">
-            <div className='card-img'>
-                <img src="https://www.w3schools.com/howto/img_avatar.png"></img>
-            </div>
-            <div class="card-body">
-                <h4><b>John Doe</b></h4>
-                <p>Architect & Engineer</p>
-                <button className="Button" type="submit">Get Forecast</button>
-            </div>
-            </div>
-        
-            <div className= "card">
-            <div className='card-img'>
-                <img src="https://www.w3schools.com/howto/img_avatar.png"></img>
-            </div>
-            <div class="card-body">
-                <h4><b>John Doe</b></h4>
-                <p>Architect & Engineer</p>
-            </div>
-            </div>
-        
-            <div className= "card">
-            <div className='card-img'>
-                <img src="https://www.w3schools.com/howto/img_avatar.png"></img>
-            </div>
-            <div class="card-body">
-                <h4><b>John Doe</b></h4>
-                <p>Architect & Engineer</p>
-            </div>
-            </div>
     
-      </body>
+        <div className='destinations'>
+            <div className= "card">
+            <div className='card-img'>
+                <img src="https://lh5.googleusercontent.com/p/AF1QipNp0e6GKgtd9-Gi92nNFjOZd__P6omSh07tCQzw=w426-h240-k-no"></img>
+            </div>
+            <div className="card-body">
+                <div className='Title'>North Passage Point Park</div>
+                <div className='Body'>0.7 Miles Away</div>
+                <td className="Button2" onClick={()=> window.open("https://goo.gl/maps/TAjoU2a5BzmWGNv66", "_blank")}>Get Directions</td>
+            </div>
+            </div>
+        
+            <div className= "card">
+            <div className='card-img'>
+                <img src="https://lh5.googleusercontent.com/p/AF1QipOCIooIPbzGyZkiNu4nKjxoIdjZo08pWYFZgAFS=w408-h272-k-no"></img>
+            </div>
+            <div className="card-body">
+                <div className='Title'>Ravenna Park</div>
+                <div className='Body'>1.3 Miles Away</div>
+                <td className="Button2" onClick={()=> window.open("https://goo.gl/maps/GiuBAcj73dKb3GC48", "_blank")}>Get Directions</td>
+            </div>
+            </div>
+        
+            <div className= "card">
+            <div className='card-img'>
+                <img src="https://lh5.googleusercontent.com/p/AF1QipPaUdOgWq-6EYX5FtidS3QmZqECQRFQWmKyBmXn=w408-h544-k-no"></img>
+            </div>
+            <div className="card-body">
+                <div className='Title'>West Montlake Park</div>
+                <div className='Body'>1.0 Miles Away</div>
+                <td className="Button2" onClick={()=> window.open("https://goo.gl/maps/Dj6FJtMyAhc52c4QA", "_blank")}>Get Directions</td>
+            </div>
+            </div>
+      </div>
     )
 
 }

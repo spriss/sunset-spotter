@@ -4,6 +4,7 @@ import Destinations from './components/Destinations/Destinations';
 
 
 function App() {
+  
   return (
     <div className="App">
       <header className="App-header">
