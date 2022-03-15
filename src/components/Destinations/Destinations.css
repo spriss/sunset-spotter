@@ -9,6 +9,7 @@
     transition-property: opacity;
     transition-timing-function: ease-in;
     transition-duration: .5s;
+    margin-top: 20px;
   }
   
   .card {
@@ -72,19 +73,17 @@
   }
 
   #imageOne {
-      background-image: url("https://lh5.googleusercontent.com/p/AF1QipNp0e6GKgtd9-Gi92nNFjOZd__P6omSh07tCQzw=w426-h240-k-no");
+      background-image: url("https://s3-media0.fl.yelpcdn.com/bphoto/EMytt97fe0wbjP1JrCF4eQ/348s.jpg");
       background-size: cover;
   }
 
   #imageTwo {
-    background-image: url("https://lh5.googleusercontent.com/p/AF1QipOCIooIPbzGyZkiNu4nKjxoIdjZo08pWYFZgAFS=w408-h272-k-no");
+    background-image: url("http://www.cs.cmu.edu/~eli/images/yr2003/05/ravenna-park.1-may/049%20sunset%20path%203%20crop%20rebal.jpg");
     background-size: cover;
 }
 
   #imageThree {
-    background-image: url("https://lh5.googleusercontent.com/p/AF1QipPaUdOgWq-6EYX5FtidS3QmZqECQRFQWmKyBmXn=w408-h544-k-no");
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/f/fa/West_Montlake_Park%2C_January_2013.jpg");
     background-size: cover;
     background-position: center;
 }
-
-  
